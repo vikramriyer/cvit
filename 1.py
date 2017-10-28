@@ -46,6 +46,7 @@ def validate_paranthesis():
   print('\nThe String is balanced!\n')
 
 def main():
+  
   # first check if the total number of paranthesis is even, else it is unbalanced
   total_no_of_paranthesis_are_even()
 
