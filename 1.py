@@ -7,7 +7,7 @@ p_dict = {'opening': 0, 'closing': 0}
 def total_no_of_paranthesis_are_even():
 
   if len(p_str) % 2 != 0:
-    print("Length is not even, and hence string is unbalanced.")
+    print("NO")
     exit(0)
   print("Length is even, let's verify if they are in equal numbers.")
 
@@ -20,7 +20,7 @@ def equal_number_of_paranthesis():
       p_dict['closing'] += 1
 
   if p_dict['opening'] != p_dict['closing']:
-    print("Opening and closing paranthesis are not equal and hence unbalanced.")
+    print("NO")
     exit(0)
 
   print("Both the opening and paranthesis are in equal numbers. We will finally \
@@ -40,10 +40,10 @@ def validate_paranthesis():
           p_stack.append(p)
 
   if len(p_stack) != 0:
-    print("\nThe string is not balanced!\n")
+    print("\nNO\n")
     exit(0)
 
-  print('\nThe String is balanced!\n')
+  print('\nYES\n')
 
 def main():
   
